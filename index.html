@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="containerr form-container">
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                <div class="formerror" id="name-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="fphone" placeholder="Enter Phone Number" required>
+                <div class="formerror" id="phone-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="femail" placeholder="Enter Email address" required>
+                <div class="formerror" id="email-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="fpass" placeholder="Enter the password" required>
+                <div class="formerror" id="pass-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="cpass">Confirm Password</label>
+                <input type="password" id="cpass" name="fcpass" placeholder="Enter the password again" required>
+                <div class="formerror" id="cpass-error"></div>
+            </div>
+
+            <div class="form-group btn-div">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <div id="confirmationMessage">Message submitted!</div>
+    </div>
+</div>
+
+<script src="./api.js"></script>
+</body>
+</html>
